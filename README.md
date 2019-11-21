@@ -1,68 +1,84 @@
-# [Start Bootstrap - Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/)
+This is Project provided by the student in KDU college
 
-[Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) is a stylish, responsive blog theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working PHP contact form.
+-------------------------------------------------------------
+----------------   Set up  ----------------------------------
 
-## Preview
 
-[![Clean Blog Preview](https://startbootstrap.com/assets/img/screenshots/themes/clean-blog.png)](https://blackrockdigital.github.io/startbootstrap-clean-blog/)
+1. create your own database and import create_tables.sql
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-clean-blog/)**
+2. after that, congiure the file in 
 
-## Status
+000/config.php
+000/connect.php
+000/showarticle.php
+000/showuser.php
+000/teamsource/php/config.php
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-clean-blog/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-clean-blog.svg)](https://www.npmjs.com/package/startbootstrap-clean-blog)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-clean-blog.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-clean-blog)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog?type=dev)
+based on your localhost or hosted databse username and pasword
 
-## Download and Installation
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/clean-blog/)
-* Install via npm: `npm i startbootstrap-clean-blog`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-clean-blog.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-clean-blog)
+3. The username and password for each user is same as following
 
-## Usage
+For admin:
 
-### Basic Usage
+username:admin
+password:admin
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-### Advanced Usage
+For normal users:
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+>>testuser (just system user)
+username:testuser1
+password:Abcd1234
 
-#### Gulp Tasks
+>>eventer (privilage is able to create event and article)
+username:eventer
+password:Abcd1234
 
-- `gulp` the default task that builds everything
-- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
+>>blockeduser
+username:blockeduser1
+password:Abcd1234
 
-You must have npm installed globally in order to use this build environment.
 
-## Bugs and Issues
+---------------------------------------------------------------
+---------------------------------------------------------------
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-clean-blog/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/themes/clean-blog/).
 
-## About
+1.Copy and paste this url: https://cse3033.000webhostapp.com/ in your browser to view demo
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+2.The user or admin have to click login at the top-right of newsletter homepage.  
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+3.User only can view the articles, upcoming events and details about KDU penang in this website 
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](https://blackrockdigital.io/).
+Admin login 
+ 
+1. Admin need to enter username or email and enter password to login.
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
 
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-## Copyright and License
+User login  
+1. Only login user can post articles, like article and comments.
+2. User have to enter username and password to login. 
+3. If the user dont have an account to login, the user have to create account by click the "Dont have an account?".
+4. If user forgot the password, the user have click forgot password to recover account password via email.
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/gh-pages/LICENSE) license.
+
+
+1.Copy and paste this url: https://cse3033.000webhostapp.com/ in your browser to view the webpage.
+
+2.The user or admin have to click login at the top-right of newsletter homepage.  
+
+3.User only can view the articles, upcoming events and details about KDU penang in this website 
+
+Admin login 
+ 
+1. Admin need to enter username or email and enter password to login.
+
+
+
+User login  
+1. Only login user can post articles, like article and comments.
+2. User have to enter username and password to login. 
+3. If the user dont have an account to login, the user have to create account by click the "Dont have an account?".
+4. If user forgot the password, the user have click forgot password to recover account password via email.
+
