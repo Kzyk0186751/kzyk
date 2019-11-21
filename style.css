@@ -1,0 +1,15 @@
+.navbar-custom
+{
+	background-color : #006699;
+	
+}
+
+.navbar-brand, navbar-nav{
+  padding: 0 15px;
+  line-height: 80px;
+}
+
+.nav-text
+{
+	color : #000000;
+}

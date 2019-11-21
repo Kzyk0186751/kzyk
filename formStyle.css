@@ -1,0 +1,113 @@
+body
+{
+	
+	padding:0;
+	font-family:sans-serif;
+}
+
+.myContainer
+{
+	background:rgba(52, 73, 94,0.6);
+	border-radius:30px;
+	padding: 40px;
+}
+
+.myContainer h1
+{
+	color:#ecf0f1;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+::placeholder
+{
+	color:#bdc3c7;
+}
+
+.myContainer input[type = "text"], .myContainer input[type = "password"], .myContainer input[type = "email"]
+{
+	border:2px solid #3498db;
+	background:none;
+	display:block;
+	margin: 20px auto;
+	text-align:center;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+.myContainer input[type = "text"]:hover, .myContainer input[type = "password"]:hover, .myContainer input[type = "email"]:hover
+{
+	border-color: #2ecc71;
+}
+
+.myContainer input[type = "text"]:focus, .myContainer input[type = "password"]:focus, .myContainer input[type = "email"]:focus
+{
+	border-color: #2ecc71; 
+}
+
+.myContainer input[type = "submit"]
+{
+	border:2px solid #2ecc71;
+	background:none;
+	display:block;
+	margin: 20px auto;
+	text-align:center;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+.myContainer input[type = "submit"]:hover
+{
+	background:#2ecc71;
+}
+.myContainer input[type = "submit"]:active
+{
+	border-color:#27ae60;
+	background:#27ae60;
+}
+
+
+.myContainer input[type = "button"]
+{
+	border:none;
+	background:none;
+	display:block;
+	margin: 20px auto;
+	text-align:center;
+	padding:0px;
+	outline: none;
+	color: white;
+	transition: 0.25s;
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+.myContainer input[type = "button"]:hover
+{
+	color:#2ecc71;
+}
+
+.myContainer label
+{
+	color:#3498db;
+	visibility:hidden;
+}
+
+.customDiv
+{
+	max-width: 400px;
+	text-align:center;
+	position: relative;
+	margin:auto;
+	margin:auto:
+}

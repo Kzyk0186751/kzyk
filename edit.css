@@ -1,0 +1,49 @@
+.mod-row
+{
+  margin-top:60px;
+  margin-left:10px;
+}
+
+.mod-leftPanel
+{
+  margin-right:10px;
+}
+
+ul.sp {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: absolute;
+  overflow: auto;
+}
+
+.myli{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  width:100%;
+}
+
+.myli a.active {
+  background-color: #4CAF50;
+  width:100%;
+  color: white;
+  text-decoration: none;
+  display:block
+}
+
+.myli a:hover:not(.active) {
+  background-color: #bbb;
+  width:100%;
+  color: white;
+  text-decoration: none;
+  display:block
+}
+
+.mod-right
+{
+  margin-left: 50px;
+}

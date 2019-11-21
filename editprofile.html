@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel = "stylesheet" href = "style.css">
+	<script>
+	$(document).ready(function(){  
+		$.ajax({
+		  type: "POST",
+		  url: "getprofile.php",
+		  data: {"code":"getprofile"},
+		  dataType: "json",
+		  success:function(response){
+				var html = '<div class="card" style="width: 18rem;">';
+				var array = response;				
+				$('#department').val(array[0]['department']);
+				$('#age').val(array[0]['age']);
+				$('#yp').val(array[0]['profile_text']);
+				 
+			  }
+		});
+		
+				
+		$("#editbtn").click(function() {
+		var dept = $('#department').val();
+		var age = $('#age').val();
+		var profile = $('#yp').val();
+		
+		console.log(dept);
+			$.ajax({
+			  type: "POST",
+			  url: "getprofile.php",
+			  data: {"code":"updateprofile","department":dept,"age":age,"profile":profile},
+			  success:function(response){
+					if(response == 'success'){
+						alert('successfully updated for new profile');
+					}else if(response == 'fail'){
+						alert('failed to update your profile');
+					}else{
+						alert('unhandled operation');
+					}
+				}
+			});
+		});
+
+
+});  
+	
+	</script>
+	
+	</script>
+</head>
+
+<body>
+    <div id = "profilenavagation">
+	<nav class="navbar navbar-custom navbar-static-top">
+
+	  <div class="container-fluid">
+
+		<div class="navbar-header">
+
+		  <a class="navbar-brand" href="index.php"> 
+		  
+		  <img src = "asset\kdupg_logo.png" style="width:42px;height:42px;border:0;">
+		  
+		  </a>
+
+		</div>
+
+		<ul class="nav navbar-nav">
+
+		  <li class="active"><a class="nav-text" href="index.php">Home</a></li>
+		  <li><a class="nav-text" href="#">Page 1</a></li>
+		  <li><a class="nav-text" href="#">Page 2</a></li>
+		  <li><a class="nav-text" href="#">Page 3</a></li>
+
+		</ul>
+		
+		<ul class="nav navbar-nav navbar-right">
+		  
+		  <li></li>
+		</ul>
+
+	  </div>
+      
+	</nav>
+	</div>
+	<div class = "container" align = "center" id = "class container">
+        <h3>Edit your profile</h3>
+			<label for="department">Your Department</label>
+			<input class="form-control" id = "department" type = "text"><br>
+			<label for="age">Your Age</label>
+			<input id = "age" min="0" type = "number"><br><br>
+			<label for="yp">Your Profile</label>
+			<textarea class="form-control" id="yp" rows="6"></textarea>
+			<div>
+				<button id = "editbtn">Update</button>
+			</div>
+	</div>
+
+
+</body>
+
+</html>
